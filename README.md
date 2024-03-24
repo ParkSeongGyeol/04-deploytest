@@ -1,3 +1,3 @@
 # 04-deploytest
 
-빌드테스트 gg
+테스트 위한 jest 설치

@@ -1,11 +1,12 @@
-// sum.test.js
+// test.js
 
+const assert = require('assert');
 const sum = require('./sum');
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
-});
-
-test('adds 5 + 7 to equal 12', () => {
-  expect(sum(5, 7)).toBe(12);
-});
+try {
+  assert.strictEqual(sum(1, 2), 3, '1 + 2 should equal 3');
+  assert.strictEqual(sum(5, 7), 12, '5 + 7 should equal 12');
+  console.log('All tests passed successfully!');
+} catch (error) {
+  console.error('Test failed:', error.message);
+}
