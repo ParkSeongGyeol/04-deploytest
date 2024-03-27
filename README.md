@@ -2,4 +2,4 @@
 
 테스트 위한 jest 설치
 
-jira
+jira a
